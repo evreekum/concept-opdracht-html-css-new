@@ -20,18 +20,63 @@ ____________________*/
 /*__________1. Global Styles__________*/
 
 /*___1.1 Variables___*/
+:root {
+    --main-color: #5722cd;
+    --main-bg-color: white;
+    --projects-bg-color: #f3f6f9;
+    --services-font-color: #7A7A7A;
+    --button-color: #ed4385;
+    --blue-color: #4845e4;
+    --main-font-color: #0c0c0c;
+    --floating-text-color: #f2f0ff;
 
+
+
+
+}
 /*__________2. Typography___________*/
+* {
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+    padding: 0;
+    margin: 0;
+}
 
-/*__________3. Layout__________*/
+h1,
+h2,
+h3,
+h4 {
+    font-family: merriweather, Serif;
 
-/*___3.1 Reusables___*/
+}
+
+h2 {
+    color: var(--main-font-color);
+    text-transform: capitalize;
+}
+h3 {
+    color: var(--main-color);
+    font-size: 30px;
+    text-align: center;
+}
+
+h4 {
+    color: var(--main-color);
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+
+    /*__________3. Layout__________*/
+
+    /*___3.1 Reusables___*/
 .header__outer-container,
 .intro__outer-container,
 .projects__outer-container,
 .services__outer-container,
 .footer__outer-container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     width: 100%;
     border: 2px solid red;
@@ -50,6 +95,9 @@ ____________________*/
     border: 2px solid green;
 }
 
+.services__logo {
+    max-width: 75px;
+}
 
 /*___3.2 Other___*/
 
@@ -57,10 +105,20 @@ ____________________*/
 
 /*___4.1 HEADER___*/
 
+
 /*___4.2 INTRO___*/
 
-/*___4.3 PROJECTS___*/
 
+/*___4.3 PROJECTS___*/
+.projects__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects__img-wrapper {
+    display: flex;
+    flex-direction: row;
+}
 /*___4.4 SERVICES___*/
 
 /*___4.5 FOOTER___*/
