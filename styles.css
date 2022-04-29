@@ -10,7 +10,9 @@ Table of Contents
 4. Areas
 4.1 Header
 4.2 Introduction
-    etc.
+4.3 Projects
+4.4 Services
+4.5 Footer
 5. Media Queries
 ____________________*/
 
@@ -19,12 +21,35 @@ ____________________*/
 
 /*___1.1 Variables___*/
 
-
 /*__________2. Typography___________*/
 
 /*__________3. Layout__________*/
 
 /*___3.1 Reusables___*/
+.header__outer-container,
+.intro__outer-container,
+.projects__outer-container,
+.services__outer-container,
+.footer__outer-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 2px solid red;
+}
+
+.header__inner-container,
+.intro__inner-container,
+.projects__inner-container,
+.services__inner-container,
+.footer__inner-container {
+    flex-basis: 1400px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid green;
+}
+
 
 /*___3.2 Other___*/
 
@@ -32,17 +57,12 @@ ____________________*/
 
 /*___4.1 HEADER___*/
 
-/*___4.2 MAIN___*/
+/*___4.2 INTRO___*/
 
-/*__4.2.1 MAIN-INNER-CONTAINER-1__*/
+/*___4.3 PROJECTS___*/
 
+/*___4.4 SERVICES___*/
 
-/*__4.2.2 MAIN-INNER-CONTAINER-2__*/
-
-
-/*__4.2.3 MAIN-INNER-CONTAINER-3__*/
-
-
-/*___4.3 FOOTER___*/
+/*___4.5 FOOTER___*/
 
 /*__________5. Media Queries__________*/
