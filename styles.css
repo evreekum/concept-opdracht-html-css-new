@@ -29,11 +29,8 @@ ____________________*/
     --blue-color: #4845e4;
     --main-font-color: #0c0c0c;
     --floating-text-color: #f2f0ff;
-
-
-
-
 }
+
 /*__________2. Typography___________*/
 * {
     box-sizing: border-box;
@@ -50,6 +47,20 @@ h4 {
 
 }
 
+h1  {
+    color: var(--floating-text-color);
+    font-size: 50px;
+    text-align: center;
+    max-width: 850px;
+}
+
+.header__sub {
+    font-weight: lighter;
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
 h2 {
     color: var(--main-font-color);
     text-transform: capitalize;
@@ -104,7 +115,35 @@ h4 {
 /*__________4. Areas__________*/
 
 /*___4.1 HEADER___*/
+.header__outer-container {
+    background-color: var(--main-color);
+}
 
+.navigation {
+    width: 100%;
+}
+
+.navigation__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2em;
+    padding: 10px;
+    font-weight: 400;
+    padding-top: 25px;
+    font-size: 15px;
+}
+
+.navigation__item {
+    list-style-type: none;
+}
+
+.navigation__item a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--floating-text-color);
+
+}
 
 /*___4.2 INTRO___*/
 
