@@ -103,7 +103,8 @@ h4 {
 
 /*___4.1 HEADER___*/
 .header__outer-container {
-    background-color: var(--main-color);
+    background-color: background: rgb(87,34,205);
+    background: linear-gradient(90deg, rgba(87,34,205,1) 45%, rgba(72,69,228,1) 65%);
 }
 
 .header__inner-container {
