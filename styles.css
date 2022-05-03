@@ -74,7 +74,8 @@ h4 {
 .intro__outer-container,
 .projects__outer-container,
 .services__outer-container,
-.footer__outer-container {
+.footer__outer-container,
+.footer__outer-container2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -103,7 +104,7 @@ h4 {
 
 /*___4.1 HEADER___*/
 .header__outer-container {
-    background-color: background: rgb(87,34,205);
+    /*background-color: background: rgb(87,34,205);*/
     background: linear-gradient(90deg, rgba(87,34,205,1) 45%, rgba(72,69,228,1) 65%);
 }
 
@@ -366,7 +367,8 @@ h4 {
 }
 /*___4.5 FOOTER___*/
 .footer__outer-container {
-    background-color: var(--main-color);
+    /*background-color: var(--main-color);*/
+    background: linear-gradient(90deg, rgba(87,34,205,1) 45%, rgba(72,69,228,1) 65%);
 }
 
 /*.footer__inner-container {*/
@@ -391,6 +393,7 @@ h4 {
     text-align: center;
     font-size: 20px;
     font-weight: 300;
+    padding: 2em;
 }
 /*.footer__personal-information {*/
 /*    !*display: flex;*!*/
@@ -401,9 +404,18 @@ h4 {
 /*    color: var(--projects-bg-color);*/
 /*}*/
 
-/*.footer__fullname {*/
+.footer__fullname {
 
-/*}*/
+}
+
+.footer__emailaddress {
+
+}
+
+.footer__message-us {
+
+
+}
 
 /*Old Version*/
 
@@ -444,24 +456,26 @@ form {
 
 .footer__button-send {
     align-self: center;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 69px;
+    font-weight: 500;
 }
 
 form button {
     text-transform: uppercase;
     background-color: #ed4385;
     color: white;
-
-    word-spacing: 3px;
     border: 5px solid #ed4385;
     border-radius: 50px;
     width: 250px;
-    height: 30px;
+    height: 50px;
     /*padding: 2px 15px;*/
     box-shadow: 0 11px 13px -10px black;
     letter-spacing: 1px;
 
 }
 
+.footer__outer-container2 {
+    background-color: black;
+    border: 2px solid black;
+}
 /*__________5. Media Queries__________*/
