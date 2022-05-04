@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@300;400;500&display=swap');
+
 /*____________________
 Table of Contents
 1. Global Styles
@@ -104,8 +106,7 @@ h4 {
 
 /*___4.1 HEADER___*/
 .header__outer-container {
-    /*background-color: background: rgb(87,34,205);*/
-    background: linear-gradient(90deg, rgba(87,34,205,1) 45%, rgba(72,69,228,1) 65%);
+    background: linear-gradient(90deg, rgba(72,69,228,1) 30%, rgba(87,34,205,1) 65%);
 }
 
 .header__inner-container {
@@ -247,17 +248,22 @@ h4 {
     justify-content: center;
     align-items: flex-start;
     gap: 1.5em;
+
     /*border: 2px solid orange;*/
 }
 
+.projects__card:nth-child(even) {
+    padding-left: 200px;
+}
 /*.projects__card:nth-child(even) {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: center;*/
-/*    align-items: flex-end;*/
-/*    gap: 1.5em;*/
-/*    !*padding-left: 50px;*!*/
+/*    !*display: flex;*!*/
+/*    !*flex-direction: column;*!*/
+/*    !*justify-content: flex-end;*!*/
+/*    !*align-items: flex-end;*!*/
+/*    !*gap: 1.5em;*!*/
+/*    padding-left: 50px;*/
 /*}*/
+
 .projects__title {
 
 }
@@ -278,16 +284,6 @@ h4 {
 
 
 }
-
-/*.projects__text:nth-child(even) {*/
-/*    font-size: 20px;*/
-/*    letter-spacing: 1px;*/
-/*    font-weight: 400;*/
-/*    max-width: 450px;*/
-/*    padding-top: 30px;*/
-/*    padding-bottom: 30px;*/
-/*    padding-left: 50px;*/
-/*}*/
 
 .projects__link-wrapper {
     display: flex;
@@ -323,10 +319,10 @@ h4 {
     box-shadow: 1px 11px 13px -6px rgba(0,0,0,0.68);
 
 }
+
 .projects__img{
     height: 500px;
     object-fit: none;
-    /*height: 400px;*/
 
 }
 
@@ -356,6 +352,7 @@ h4 {
     aspect-ratio: 1 / 1;
     padding: 3em;
     border: 1px solid var(--main-color);
+    box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.74);
     /*width: 410px;*/
     /*min-height: auto;*/
 
@@ -466,8 +463,8 @@ form button {
     color: white;
     border: 5px solid #ed4385;
     border-radius: 50px;
-    width: 250px;
-    height: 50px;
+    width: 200px;
+    height: 45px;
     /*padding: 2px 15px;*/
     box-shadow: 0 11px 13px -10px black;
     letter-spacing: 1px;
@@ -476,6 +473,8 @@ form button {
 
 .footer__outer-container2 {
     background-color: black;
-    border: 2px solid black;
+    color: var(--floating-text-color);
+    font-size: 12px;
+    padding: 1em;
 }
 /*__________5. Media Queries__________*/
