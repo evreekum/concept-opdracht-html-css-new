@@ -257,14 +257,14 @@ h4 {
     /*padding-left: 200px;*/
 
 }
-/*.projects__card:nth-child(even) {*/
-/*    !*display: flex;*!*/
-/*    !*flex-direction: column;*!*/
-/*    !*justify-content: flex-end;*!*/
-/*    !*align-items: flex-end;*!*/
-/*    !*gap: 1.5em;*!*/
-/*    padding-left: 50px;*/
-/*}*/
+.projects__card:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 50px;
+    gap: 1.5em;
+}
 
 .projects__title {
 
@@ -289,8 +289,7 @@ h4 {
 .projects__link-wrapper {
     display: flex;
     flex-direction: row;
-    /*justify-content: space-between;*/
-    /*align-content: space-between;*/
+
 }
 .projects__link {
     text-transform: uppercase;
@@ -306,8 +305,6 @@ h4 {
     height: 1px;
     border-bottom: 1px solid var(--main-color);
     align-self: center;
-    /*line-height: 5px;*/
-    /*position: absolute;*/
 }
 
 .projects__img-wrapper {
@@ -333,7 +330,6 @@ h4 {
 }
 
 .services__inner-container {
-    /*flex-basis: 360px;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -355,8 +351,6 @@ h4 {
     box-shadow: 0 5px 15px -5px rgba(0,0,0,0.74);
     /*width: 410px;*/
     /*min-height: auto;*/
-
-
 }
 
 .services__logo {
@@ -368,17 +362,11 @@ h4 {
 }
 
 .footer__inner-container {
-    /*padding: 2em;*/
-    /*min-width: 80%;*/
-    /*flex-basis: 600px;*/
 
 }
 
 .footer__hero-section {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: space-between;*/
-    /*align-items: center;*/
+
 }
 
 .footer__title {
@@ -393,14 +381,20 @@ h4 {
     font-weight: 300;
     padding: 2em;
 }
-/*.footer__personal-information {*/
-/*    text-transform: capitalize;*/
-/*    color: var(--projects-bg-color);*/
-/*}*/
+
+.footer__javascipt-needed {
+    align-self: center;
+    text-transform: capitalize;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
+}
 
 .footer__fullname {
     width: 300px;
     height: 30px;
+
 }
 
 .footer__emailaddress {
@@ -412,40 +406,6 @@ h4 {
 /*    width: 300px;*/
 /*    height: 400px;*/
 
-/*}*/
-
-/*_________Old Version_______*/
-
-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-    /*color: white;*/
-
-
-}
-
-.footer__personal-information {
-    /*font-weight: 400;*/
-    /*display: block;*/
-    /*align-self: flex-start;*/
-    /*align-items: flex-start;*/
-    /*display: block;*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*!*justify-content: space-evenly;*!*/
-    /*align-items: flex-start;*/
-    /*gap: 2em;*/
-    /*color: white;*/
-    /*width: 700px;*/
-}
-/*#fullname,*/
-/*#emailaddress,*/
-/*#message-us {*/
-/*    align-self: flex-start;*/
-/*    display: block;*/
-/*    width: ;*/
 /*}*/
 
 .footer__button-send {
@@ -466,6 +426,13 @@ form button {
     box-shadow: 0 11px 13px -10px black;
     letter-spacing: 1px;
 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--floating-text-color);
 }
 
 .footer__outer-container2 {
