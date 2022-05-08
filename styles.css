@@ -219,11 +219,11 @@ h4 {
 
 /*___4.3 PROJECTS___*/
 .projects__outer-container {
-
+    background-color: var(--projects-bg-color);
 }
 
 .projects__inner-container {
-    background-color: var(--projects-bg-color);
+
 
 }
 
@@ -232,8 +232,7 @@ h4 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    /*flex-wrap: wrap-reverse;*/
-    padding: 2em;
+    padding: 2em 2em 100px;
 }
 
 .projects__wrapper:nth-child(even) {
@@ -246,23 +245,26 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 30px 30px 30px 130px;
+    margin: 30px;
     gap: 1.5em;
+    /*flex-basis: 800px;*/
+    flex-grow: 0;
+    flex-shrink: 1;
     /*border: 2px solid orange;*/
 }
 
 .projects__card:not:nth-child(odd) {
-    margin-left: 30px;
+    /*margin-left: 30px;*/
     /*padding-left: 200px;*/
 
 }
 .projects__card:nth-child(even) {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-left: 50px;
-    gap: 1.5em;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: flex-end;*/
+    /*align-items: flex-end;*/
+    /*padding-left: 50px;*/
+    /*gap: 1.5em;*/
 }
 
 .projects__title {
@@ -275,9 +277,8 @@ h4 {
 }
 
 .projects__text {
-    font-size: 20px;
     letter-spacing: 1px;
-    font-weight: 400;
+    font-weight: 450;
     max-width: 450px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -288,6 +289,7 @@ h4 {
 .projects__link-wrapper {
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
 
 }
 .projects__link {
@@ -307,18 +309,19 @@ h4 {
 }
 
 .projects__img-wrapper {
-    flex-basis: 800px;
+    flex-basis: 900px;
     flex-grow: 0;
     flex-shrink: 1;
-    box-shadow: 1px 11px 13px -6px rgba(0,0,0,0.68);
-    border: 2px solid orange;
+
+    /*border: 2px solid orange;*/
 
 }
 
-.projects__img{
-    width: 100%;
+.projects__img {
+    width: 700px;
     height: auto;
-    object-fit: scale-down;
+    box-shadow: 1px 11px 13px -6px rgba(0,0,0,0.68);
+    /*object-fit: scale-down;*/
     /*max-height: 500px;*/
     /*object-fit: none;*/
 
