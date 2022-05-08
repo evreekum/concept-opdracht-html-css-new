@@ -51,7 +51,10 @@ h1  {
     color: var(--floating-text-color);
     font-size: 55px;
     text-align: center;
-
+    padding-top: 115px;
+    max-width: 850px;
+    letter-spacing: -2px;
+    line-height: 55px;
 }
 
 
@@ -62,10 +65,20 @@ h2 {
     /*letter-spacing: 1px;*/
 }
 
+h3 {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 29px;
+    max-width: 900px;
+    padding: 0.60em;
+    line-height: 48px;
+}
+
 h4 {
     color: var(--main-color);
     font-size: 25px;
     text-transform: capitalize;
+    padding-bottom: 15px;
 }
 
 
@@ -98,8 +111,6 @@ h4 {
     /*border: 2px solid green;*/
 }
 
-
-
 /*___3.2 Other___*/
 
 /*__________4. Areas__________*/
@@ -109,11 +120,7 @@ h4 {
     background: linear-gradient(90deg, rgba(72,69,228,1) 30%, rgba(87,34,205,1) 65%);
 }
 
-.header__inner-container {
-
-}
-
-.navigation {
+nav {
     width: 100%;
 }
 
@@ -129,15 +136,12 @@ h4 {
 
 .navigation__item {
     list-style-type: none;
-
 }
 
 .navigation__item a {
     text-transform: capitalize;
     text-decoration: none;
     color: var(--floating-text-color);
-
-
 }
 
 .header__hero-section {
@@ -145,16 +149,6 @@ h4 {
     flex-direction: column;
     align-items: center;
     gap: 2em;
-
-
-}
-
-.header__title {
-    padding-top: 115px;
-    max-width: 850px;
-    letter-spacing: -2px;
-    line-height: 55px;
-
 }
 
 .header__sub {
@@ -162,7 +156,6 @@ h4 {
     color: var(--floating-text-color);
     font-weight: 300;
 }
-
 
 .button--active {
     text-transform: uppercase;
@@ -182,23 +175,9 @@ h4 {
 }
 
 /*___4.2 INTRO___*/
-.intro__outer-container {
-
-}
-
 .intro__inner-container {
     padding-top: 80px;
     padding-bottom: 100px;
-}
-
-.intro__title {
-    text-align: center;
-    color: var(--main-color);
-    font-size: 29px;
-    max-width: 900px;
-    padding: 0.60em;
-    line-height: 48px;
-
 }
 
 .intro__title:nth-of-type(2) {
@@ -216,17 +195,10 @@ h4 {
 }
 
 
-
 /*___4.3 PROJECTS___*/
 .projects__outer-container {
     background-color: var(--projects-bg-color);
 }
-
-.projects__inner-container {
-
-
-}
-
 
 .projects__wrapper {
     display: flex;
@@ -251,24 +223,6 @@ h4 {
     flex-grow: 0;
     flex-shrink: 1;
     /*border: 2px solid orange;*/
-}
-
-.projects__card:not:nth-child(odd) {
-    /*margin-left: 30px;*/
-    /*padding-left: 200px;*/
-
-}
-.projects__card:nth-child(even) {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: flex-end;*/
-    /*align-items: flex-end;*/
-    /*padding-left: 50px;*/
-    /*gap: 1.5em;*/
-}
-
-.projects__title {
-
 }
 
 .projects__squiggle-img {
@@ -312,26 +266,15 @@ h4 {
     flex-basis: 900px;
     flex-grow: 0;
     flex-shrink: 1;
-
-    /*border: 2px solid orange;*/
-
 }
 
 .projects__img {
     width: 700px;
     height: auto;
     box-shadow: 1px 11px 13px -6px rgba(0,0,0,0.68);
-    /*object-fit: scale-down;*/
-    /*max-height: 500px;*/
-    /*object-fit: none;*/
-
 }
 
 /*___4.4 SERVICES___*/
-.services__outer-container {
-
-}
-
 .services__inner-container {
     display: flex;
     flex-direction: row;
@@ -349,7 +292,6 @@ h4 {
     margin: 2em;
     border: 1px solid var(--main-color);
     box-shadow: 0 5px 15px -5px rgba(0,0,0,0.74);
-    /*width: 410px;*/
     max-height: 380px;
 }
 
@@ -359,7 +301,7 @@ h4 {
 }
 
 .services__title {
-    padding-bottom: 15px;
+    /*padding-bottom: 15px;*/
 }
 
 .services-text {
@@ -376,6 +318,8 @@ h4 {
 .footer__inner-container {
     padding-top: 110px;
     padding-bottom: 90px;
+    /*width: 1200px;*/
+    /*flex-basis: 600px;*/
 }
 
 .footer__hero-section {
@@ -395,31 +339,37 @@ h4 {
     padding: 2em;
 }
 
-.footer__javascipt-needed {
+form {
     text-transform: capitalize;
+    width: 60%;
+    max-width: 700px;
+
 }
 
 .footer__fullname {
-    width: 300px;
+    width: 700px;
     height: 30px;
+    margin-bottom: 20px;
+    border: 2px solid pink;
 
 }
 
-.footer__emailaddress {
-    width: 300px;
+.footer__email-address {
+    max-width: 700px;
     height: 30px;
 }
 
-/*.footer__message-us {*/
-/*    width: 300px;*/
-/*    height: 400px;*/
+.footer__message-us {
+    width: 300px;
+    height: 400px;
 
-/*}*/
+}
 
 .footer__button-send {
     align-self: center;
     font-size: 20px;
     font-weight: 500;
+    margin-top: 50px;
 }
 
 form button {
@@ -432,13 +382,12 @@ form button {
     height: 50px;
     box-shadow: 0 11px 13px -10px black;
     letter-spacing: 1px;
-
 }
 
 form {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: space-around;
     color: var(--floating-text-color);
 }
 
