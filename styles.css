@@ -62,7 +62,6 @@ h2 {
     color: var(--main-font-color);
     text-transform: capitalize;
     font-size: 35px;
-    /*letter-spacing: 1px;*/
 }
 
 h3 {
@@ -209,7 +208,6 @@ nav {
 
 .projects__wrapper:nth-child(even) {
     flex-direction: row-reverse;
-
 }
 
 .projects__card {
@@ -237,22 +235,20 @@ nav {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-right: 50px;
-
 }
 
 .projects__link-wrapper {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-
 }
+
 .projects__link {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 1px;
     font-size: 15px;
     padding-right: 15px;
-
 }
 
 .projects__line {
@@ -300,14 +296,9 @@ nav {
     padding-bottom: 10px;
 }
 
-.services__title {
-    /*padding-bottom: 15px;*/
-}
-
 .services-text {
     color: var(--services-font-color);
     font-size: 17px;
-
 }
 
 /*___4.5 FOOTER___*/
@@ -320,10 +311,6 @@ nav {
     padding-bottom: 90px;
     /*width: 1200px;*/
     /*flex-basis: 600px;*/
-}
-
-.footer__hero-section {
-
 }
 
 .footer__title {
@@ -343,26 +330,18 @@ form {
     text-transform: capitalize;
     width: 60%;
     max-width: 700px;
-
 }
 
 .footer__fullname {
     width: 700px;
     height: 30px;
     margin-bottom: 20px;
-    border: 2px solid pink;
-
+    border: 0 solid;
 }
 
 .footer__email-address {
     max-width: 700px;
     height: 30px;
-}
-
-.footer__message-us {
-    width: 300px;
-    height: 400px;
-
 }
 
 .footer__button-send {
@@ -397,4 +376,5 @@ form {
     font-size: 12px;
     padding: 1.5em;
 }
+
 /*__________5. Media Queries__________*/
