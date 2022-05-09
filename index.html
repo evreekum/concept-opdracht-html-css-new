@@ -1,10 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <title>Concept Opdracht HTML & CSS</title>
 </head>
 <body>
+<!----------4.1 HEADER---------->
+<header class="header__outer-container">
+    <div class="header__inner-container">
 
+        <nav>
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="">about us</a></li>
+                <li class="navigation__item"><a href="">case studies</a></li>
+                <li class="navigation__item"><a href="#footer__fullname">contact us</a></li>
+            </ul>
+        </nav>
+        <div class="header__hero-section">
+            <h1>Your website is an investment in the success of your business.</h1>
+            <p class="header__sub">We are here to help you succeed.</p>
+            <a href="#footer__fullname">
+                <button class="button--active">let's work together
+                </button>
+            </a>
+            <div class="header__wave-img"><img src="/Assets/squiggle_line_stripe.svg" alt="Wave Image">
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<!----------4.2 INTRO---------->
+<main>
+    <section class="intro__outer-container">
+        <div class="intro__inner-container">
+            <h3>Rekupe is a digital agency in Los Angeles.
+            </h3>
+            <h3>We use strategic UX, SEO optimization and beautiful visual designs to help your
+                business grow.
+            </h3>
+            <h3>We see every project as a fresh opportunity, pushing ourselves to create new
+                digital experiences.
+            </h3>
+            <p class="intro__question-click">Have a question? <a class="intro__click-here" href="#footer__fullname">Click
+                here</a> to contact us!</p>
+        </div>
+    </section>
+
+    <!----------4.3 PROJECTS---------->
+    <section class="projects__outer-container">
+        <article class="projects__inner-container">
+            <div class="projects__wrapper">
+                <div class="projects__card">
+                    <h2>Rolling Stone</h2>
+                    <img class="projects__squiggle-img" src="/Assets/squiggle_line.svg" alt="Wave Image">
+                    <p class="projects__text">You know Rolling Stone. It’s the definitive voice in music, politics and
+                        culture. It’s a global icon.
+                    </p>
+                    <div class="projects__link-wrapper">
+                        <a class="projects__link" href="https://www.rekupe.com/rolling-stone/">view project</a>
+                        <div class="projects__line"></div>
+                    </div>
+                </div>
+                <span class="projects__img-wrapper">
+                    <img class="projects__img" src="/Assets/work-image-01.jpeg" alt="Rolling Stone Desktop">
+                </span>
+            </div>
+
+            <div class="projects__wrapper">
+                <div class="projects__card">
+                    <h2>variety</h2>
+                    <img class="projects__squiggle-img" src="/Assets/squiggle_line.svg" alt="Wave Image">
+                    <p class="projects__text">Variety is an industry leader for breaking entertainment news, reviews and
+                        box office results with archive of content dating back to 1905.
+                    </p>
+                    <a class="projects__link" href="https://www.rekupe.com/variety/">view project</a>
+                </div>
+                <span class="projects__img-wrapper">
+                    <img class="projects__img" src="/Assets/work-image-02.jpeg" alt="Variety Magazine">
+                </span>
+            </div>
+
+            <div class="projects__wrapper">
+                <div class="projects__card">
+                    <h2>variety500</h2>
+                    <img class="projects__squiggle-img" src="/Assets/squiggle_line.svg" alt="Wave Image">
+                    <p class="projects__text">Variety500 is an index of the 500 most influential business leaders
+                        shaping the global $2 trillion entertainment industry.
+                    </p>
+                    <a class="projects__link" href="https://www.rekupe.com/variety-500/">view project</a>
+                </div>
+                <span class="projects__img-wrapper">
+                    <img class="projects__img" src="/Assets/work-image-03.jpeg" alt="Variety500 Tablet">
+                </span>
+            </div>
+
+            <div class="projects__wrapper">
+                <div class="projects__card">
+                    <h2>worth</h2>
+                    <img class="projects__squiggle-img" src="/Assets/squiggle_line.svg" alt="Wave Image">
+                    <p class="projects__text">A global media platform connecting a community that embraces worth beyond
+                        wealth.
+                    </p>
+                    <a class="projects__link" href="https://www.rekupe.com/worth/">view project</a>
+                </div>
+                <span class="projects__img-wrapper">
+                    <img class="projects__img" src="/Assets/work-image-04.jpeg" alt="Worth Desktop">
+                </span>
+            </div>
+
+            <div class="projects__wrapper">
+                <div class="projects__card">
+                    <h2>association health plans</h2>
+                    <img class="projects__squiggle-img" src="/Assets/squiggle_line.svg" alt="Wave Image">
+                    <p class="projects__text">Association health plans are a new alternative to provide small business
+                        owners, sole proprietors and freelancers with health insurance at a reduced cost.
+                    </p>
+                    <a class="projects__link" href="https://www.rekupe.com/association-health-plans/">view project</a>
+                </div>
+                <span class="projects__img-wrapper">
+                    <img class="projects__img" src="/Assets/work-image-05.jpeg" alt="AHP Desktop">
+                </span>
+            </div>
+
+            <div class="projects__wrapper">
+                <div class="projects__card">
+                    <h2>SchoolKit</h2>
+                    <img class="projects__squiggle-img" src="/Assets/squiggle_line.svg" alt="Wave Image">
+                    <p class="projects__text">SchoolKit works with local educators to improve curriculum so that
+                        students can be college and career ready.
+                    </p>
+                    <a class="projects__link" href="https://www.rekupe.com/school-kit/">view project</a>
+                </div>
+                <span class="projects__img-wrapper">
+                    <img class="projects__img" src="/Assets/work-image-06.jpeg" alt="SchoolKit Desktop">
+                </span>
+            </div>
+
+        </article>
+    </section>
+</main>
+<!----------4.4 SERVICES---------->
+<section class="services__outer-container">
+    <article class="services__inner-container">
+        <div class="services__wrapper">
+            <div class="services__card">
+                <img class="services__logo" src="/Assets/icon_web-design.svg" alt="Web Design Icon">
+                <h4>web design</h4>
+                <p class="services-text">Good web design is how companies stand out from their competitors. High quality
+                    web design leads to increased user conversion and engagement. Through a proven web design process,
+                    we help clients launch websites and products that improve on their bottom line.
+                </p>
+            </div>
+        </div>
+
+        <div class="services__wrapper">
+            <div class="services__card">
+                <img class="services__logo" src="/Assets/icon_web-development.svg" alt="Web Development Icon">
+                <h4>web development</h4>
+                <p class="services-text">Modern websites need to be responsive and fully functional at all sizes. We
+                    develop all of our sites with a mobile first approach and ensure that our code quality is clean,
+                    organized and performant. Already have a design but need it developed? We’re here to help!
+                </p>
+            </div>
+        </div>
+
+        <div class="services__wrapper">
+            <div class="services__card">
+                <img class="services__logo" src="/Assets/icon_ux.svg" alt="UX Icon">
+                <h4>user experience</h4>
+                <p class="services-text">In order to build successful products you have to understand the user. We
+                    create user personas, wireframes and prototypes to test with users. This allows us to gather
+                    feedback which helps to shape the product and can quickly eliminate potential risks – saving you
+                    time and money.
+                </p>
+            </div>
+        </div>
+
+        <div class="services__wrapper">
+            <div class="services__card">
+                <img class="services__logo" src="/Assets/icon_graphic-design.svg" alt="Graphic Design Icon">
+                <h4>logo design + branding</h4>
+                <p class="services-text">Nike, Apple, Coca-Cola, Starbucks. What do all of these brands have in common?
+                    Easily recognizable logos and brand identity. The best brands stand out from the crowd by having a
+                    clear and unique point of view. We will work with you to understand your vision and help create a
+                    unique brand identity and style guide for your company.
+                </p>
+            </div>
+        </div>
+
+        <div class="services__wrapper">
+            <div class="services__card">
+                <img class="services__logo" src="/Assets/icon_seo.svg" alt="SEO Icon">
+                <h4>SEO</h4>
+                <p class="services-text">Do you want your site to rank higher in search results? Google is constantly
+                    changing their algorithms for how they rank pages. Don’t worry about constantly playing catch-up. We
+                    will make sure your website it optimized, providing you the best opportunities for organic search
+                    exposure.
+                </p>
+            </div>
+        </div>
+
+        <div class="services__wrapper">
+            <div class="services__card">
+                <img class="services__logo" src="/Assets/icon_copywriting.svg" alt="Copywriting icon">
+                <h4>Copywriting</h4>
+                <p class="services-text">Brand messaging needs to be clear, direct and easy to understand to be
+                    effective. A unique tone of voice will help you stand out from the crowd and build brand loyalty. We
+                    work with you to establish your brand bible and ensure your messaging is focused and targeted.
+                </p>
+            </div>
+        </div>
+
+    </article>
+</section>
+
+<!----------4.5 FOOTER---------->
+<footer class="footer__outer-container">
+    <section class="footer__inner-container">
+        <div class="footer__hero-section">
+            <h2 class="footer__title">let's work together</h2>
+            <p class="footer__sub">Have a question? Need a quote? Let us know!</p>
+        </div>
+        <form>
+            <label for="footer__fullname">name
+                <input class="footer__fullname" type="text" id="footer__fullname" placeholder="Name"/>
+            </label>
+
+            <label for="footer__email">email
+                <input class="footer__fullname" type="text" id="footer__email" placeholder="Email"/>
+
+            </label>
+
+            <label for="footer__message-us">message
+                <textarea id="footer__message-us" placeholder="Message" cols="104" rows="5"></textarea>
+            </label>
+
+            <button class="footer__button-send" type="submit">send</button>
+
+        </form>
+    </section>
+</footer>
+<section class="footer__outer-container2">
+    <p class="footer__copyright">Business website opdracht © NOVI Hogeschool 2022</p>
+</section>
+
+<!----------5. MEDIA QUERIES-->
 </body>
 </html>
